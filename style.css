@@ -1,54 +1,64 @@
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #000;
+    margin: 0;
+    padding: 0;
 }
-body:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-image: url('./images/backgroundPeacock.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	opacity: 0.5;
+
+.backgroundImage {
+	width: inherit;
+	height: inherit;
+    background-color: #000;
+}
+
+.backgroundImage:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/backgroundPeacock.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 .myRing {
-	width: 200px;
-	height: 200px;
-	line-height: 200px;
-	text-align: center;
-	font-size: 25px;
-	font-family: sans-serif;
-	background: #000; /*#ddd*/
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-	color: palegoldenrod;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    background: #000;
+    /*#ddd*/
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    color: palegoldenrod;
 }
+
 .myRing:before {
-	content: '';
-	position: absolute;
-	top: -3px;
-	left: -3px;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	border: 3px solid #3c3c3c; /*#ddd*/
-	border-top: 3px solid #fff000;
-	animation: animate 2s linear;
-	animation-iteration-count: 3;
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #3c3c3c;
+    /*#ddd*/
+    border-top: 3px solid #fff000;
+    animation: animate 2s linear;
+    animation-iteration-count: 3;
 }
-@keyframes animate{
-	0%{
-		transform: rotate(0deg);
-	}
-	100%{
-		transform: rotate(360deg);
-	}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
